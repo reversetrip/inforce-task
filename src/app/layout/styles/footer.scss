@@ -1,0 +1,28 @@
+footer {
+  height: 130px;
+  border: 1px solid rgba($color: #69706d, $alpha: 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: #828f89, $alpha: 0.2);
+
+  ul {
+    margin-left: 15%;
+    margin-right: 5rem;
+
+    li {
+      font-size: 1.2rem;
+      margin-left: 1rem;
+
+      &:hover {
+        text-shadow: 1px 1px 1px black;
+      }
+    }
+  }
+
+  p {
+    margin-left: 5rem;
+    margin-right: 40%;
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imageUrl": "https://res.cloudinary.com/dune7puvp/image/upload/v1682795726/39_4000_gi96i8.jpg",
+      "name": "Laptop ACER Aspire 3 A315-59 15.6FHD IPS/Intel i5-1235U/8/256F",
+      "count": 4,
+      "size": {
+        "width": 363,
+        "height": 241
+      },
+      "weight": "1.78kg",
+      "comments": [ { "commentId": 1 } ]
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://res.cloudinary.com/dune7puvp/image/upload/v1682795720/38_4000_mlet1s.jpg",
+      "name": "Laptop Lenovo IdeaPad Gaming 3 15IHU6 (82K101HQRA)",
+      "count": 2,
+      "size": {
+        "width": 359,
+        "height": 252
+      },
+      "weight": "2.25kg",
+      "comments": [ { "commentId": 2 } ]
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://res.cloudinary.com/dune7puvp/image/upload/v1682795715/36_4000_trhdyk.jpg",
+      "name": "Laptop ASUS L1500CDA-BQ0758 (90NX0401-M001F0)",
+      "count": 7,
+      "size": {
+        "width": 358,
+        "height": 236
+      },
+      "weight": "1.75kg",
+      "comments": [ { "commentId": 3 } ]
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://res.cloudinary.com/dune7puvp/image/upload/v1682795707/55_4000_flzfbr.jpg",
+      "name": "Laptop ASUS TUF Gaming F15 FX506HC-HN004 (90NR0724-M00NU0)",
+      "count": 18,
+      "size": {
+        "width": 360,
+        "height": 256
+      },
+      "weight": "2.3kg",
+      "comments": []
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://res.cloudinary.com/dune7puvp/image/upload/v1682795699/72_4000_iavruh.jpg",
+      "name": "Laptop ACER Aspire 7 A715-51G (NH.QHTEU.004)",
+      "count": 11,
+      "size": {
+        "width": 362,
+        "height": 237
+      },
+      "weight": "2.1kg",
+      "comments": []
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://res.cloudinary.com/dune7puvp/image/upload/v1682795690/8_4000_awwrni.jpg",
+      "name": "Laptop ACER Aspire 5 A515-56 (NX.A8NEU.002)",
+      "count": 12,
+      "size": {
+        "width": 363,
+        "height": 238
+      },
+      "weight": "1.65kg",
+      "comments": []
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "productId": 1,
+      "description": "Сomment for Acer Aspire 3",
+      "date": "14:00 22.08.2021"
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "description": "Сomment for Lenovo IdeaPad Gaming 3",
+      "date": "17:28 22.08.2021"
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "description": "Comment for ASUS L1500CDA",
+      "date": "10:42 22.08.2021"
+    }
+  ]
+}

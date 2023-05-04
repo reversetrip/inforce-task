@@ -1,0 +1,23 @@
+.singleComment {
+  padding: 10px;
+  margin: 5px;
+  max-width: 400px;
+  border: 1px solid rgba($color: #4a4646, $alpha: 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 0;
+  }
+
+  .singleComment-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    button {
+      margin-right: auto;
+    }
+  }
+}

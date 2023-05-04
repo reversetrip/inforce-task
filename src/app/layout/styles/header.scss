@@ -1,0 +1,32 @@
+header {
+  height: 130px;
+  border: 1px solid rgba($color: #69706d, $alpha: 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(122, 240, 183, 0.3);
+
+  p {
+    font-size: 3rem;
+    margin-left: 30%;
+    margin-right: auto;
+  }
+
+  nav {
+    margin-right: 10%;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      font-size: 1.2rem;
+      margin-left: 1rem;
+
+      &:hover {
+        text-shadow: 1px 1px 1px black;
+      }
+    }
+  }
+}
