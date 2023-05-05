@@ -31,12 +31,12 @@ export function DropdownMenu({ modes, onMenuOption }: DropdownProps) {
   };
 
   return (
-    <div className="dropdownMenu">
-      <button className="dropdownMenu-toggle" onClick={handleDropdownClick}>
+    <div className='dropdownMenu'>
+      <button className='dropdownMenu__toggle' onClick={handleDropdownClick}>
         {selectedMode || 'Sort mode'}
       </button>
       {isOpen && (
-        <ul className="dropdownMenu-options">
+        <ul className='dropdownMenu__options'>
           {modes.map((mode) => (
             <li key={mode} onClick={() => handleOptionClick(mode)}>
               {mode}
@@ -47,5 +47,3 @@ export function DropdownMenu({ modes, onMenuOption }: DropdownProps) {
     </div>
   );
 };
-
-export default DropdownMenu;

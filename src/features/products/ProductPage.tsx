@@ -39,7 +39,6 @@ export function ProductPage({
   function handleFormInputChange(e: React.ChangeEvent<HTMLInputElement>) {
     let { name, value } = e.target;
 
-    // checking for numbers only (for numeric fields)
     switch (name) {
       case 'count':
       case 'width':
@@ -98,25 +97,26 @@ export function ProductPage({
       description: commentField.trim(),
       date: getCurrentDate()
     };
+
     dispatch(addComment(newComment));
     setCommentField('');
   }
 
   return (
     <div className='productPage'>
-      <div className='productPage-main'>
-        <div className='productPage-main-image'>
+      <div className='productPage__main'>
+        <div className='productPage__main__image'>
           <img src={imageUrl} alt='laptop' width='500px' height='auto' />
         </div>
-        <div className='productPage-main-about'>
-          <div className='productPage-main-about-params'>
+        <div className='productPage__main__about'>
+          <div className='productPage__main__about__params'>
             <h2>{name}</h2>
             <p>In stock: {count} pieces</p>
             <p>Product width: {width}mm</p>
             <p>Product height: {height}mm</p>
             <p>Product weight: {weight}</p>
           </div>
-          <div className='productPage-main-about-controls'>
+          <div className='productPage__main__about__controls'>
             <button onClick={() => setShowModal(true)}>edite product</button>
             <button onClick={() => dispatch(selectProduct(-1))}>back</button>
             <Modal
@@ -131,15 +131,19 @@ export function ProductPage({
           </div>
         </div>
       </div>
-      <div className='productPage-comments'>
-        {commentsList}
-        <textarea
-          value={commentField}
-          onChange={(e) => setCommentField(e.target.value)}
-          placeholder='write your comment'
-          rows={5}
-        />
-        <button onClick={handleAddComment}>add</button>
+      <div className='productPage__comments'>
+        <div className='productPage__comments__list'>
+          {commentsList}
+        </div>
+        <div className='productPage__comments__newComment'>
+          <textarea
+            value={commentField}
+            onChange={(e) => setCommentField(e.target.value)}
+            placeholder='write your comment'
+            rows={5}
+          />
+          <button onClick={handleAddComment}>add</button>
+        </div>
       </div>
     </div >
   );

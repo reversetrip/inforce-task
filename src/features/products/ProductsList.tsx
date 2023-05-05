@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
 import {
   getProductsList,
@@ -23,12 +23,12 @@ export function ProductsList() {
 
   const errorMessage = error && <h3 className='productList-error'>something went wrong: {error.message}</h3>;
   const productCards = products.map(p => {
-    return <ProductCard key={p.name} {...p}/>;
+    return <ProductCard key={p.name} {...p} />;
   });
 
   return (
-    <div className='productList'>
-      {(productStatus === 'loading') ? <h3 className='productList-loader'>Loading...</h3>
+    <div className='productsList'>
+      {(productStatus === 'loading') ? <div className='productsList__loader'><div></div></div>
           : error ? errorMessage : productCards}
     </div>
   );

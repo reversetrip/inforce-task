@@ -2,11 +2,11 @@ In the project directory, you can run:
 
 ### `npm install -g json-server`
 
-Install json-serber globally.
+Installs the json-server package globally.
 
 ### `json-server --watch db.json --port 3001`
 
-Run the command from 'json-server' directory of the project in order to set up a fake server.
+Run the command from the 'json-server' directory of the project in order to set up a fake server.
 
 ### `npm start`
 

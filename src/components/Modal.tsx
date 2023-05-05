@@ -43,21 +43,21 @@ export function Modal({
       nodeRef={nodeRef}
     >
       <div ref={nodeRef} className='modal' onClick={onCancel}>
-        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-          <div className="modal-header">
-            <h3 className="modal-title">
+        <div className='modal__content' onClick={(e) => e.stopPropagation()}>
+          <div className='modal__content__header'>
+            <h3 className='modal__content__header__title'>
               {title}
             </h3>
           </div>
-          <div className="modal-body">
+          <div className='modal__content__body'>
             {children}
-            {errorMessage && <p className='modal-body-error'>You cannot add a product with an empty field</p>}
+            {errorMessage && <p className='modal__content__body__error'>You cannot add a product with an empty field</p>}
           </div>
-          <div className="modal-footer">
-            <button onClick={onConfirm} className='modal-footer-confirm'>
+          <div className='modal__content__footer'>
+            <button onClick={onConfirm} className='modal__content__footer__confirm'>
               Confirm
             </button>
-            <button onClick={onCancel} className="modal-footer-cancel">
+            <button onClick={onCancel} className='modal__content__footer__cancel'>
               Cancel
             </button>
           </div>

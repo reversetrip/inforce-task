@@ -11,20 +11,15 @@ export function ProductCard({ id, imageUrl, name }: Product) {
 
   return (
     <div className='card'>
-      <div className='card-image'>
-        <img
-          src={imageUrl}
-          alt='laptop'
-          width='300px'
-          height='auto'
-        />
+      <div className='card__image'>
+        <img src={imageUrl} alt='laptop' width='300px' height='auto' />
       </div>
-      <span>{name}</span>
-      <div className='card-buttons'>
-        <button className='card-viewBtn' onClick={() => dispatch(selectProduct(id))}>
+      <span className='card__name'>{name}</span>
+      <div className='card__buttons'>
+        <button className='card__buttons__view' onClick={() => dispatch(selectProduct(id))}>
           view
         </button>
-        <button className='card-removeBtn' onClick={() => setShowModal(true)}>
+        <button className='card__buttons__remove' onClick={() => setShowModal(true)}>
           remove
         </button>
       </div>

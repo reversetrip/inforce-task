@@ -1,41 +1,40 @@
 .dropdownMenu {
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-left: 0.6rem;
+  margin-right: 1.25rem;
   position: relative;
   display: inline-block;
 
-  .dropdownMenu-toggle {
+  &__toggle {
     text-align: left;
     font-weight: bold;
-    padding: 10px 16px;
-    background-color: #f0f0f0;
+    width: 200px;
+    padding: 0.65rem 1rem;
     border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
     cursor: pointer;
     outline: none;
-    width: 200px;
-    border-radius: 5px;
 
     &:hover {
       background-color: #e0e0e0;
     }
   }
 
-  .dropdownMenu-options {
+  &__options {
+    min-width: 200px;
+    margin: 0;
+    padding: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 5px;
+    background-color: #fff;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 1;
-    min-width: 200px;
-    padding: 8px 0;
-    margin: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-top: none;
-    list-style-type: none;
-    border-radius: 5px;
 
     li {
-      padding: 8px 16px;
+      padding: 0.5rem 1rem;
       cursor: pointer;
 
       &:hover {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAppDispatch } from '../../app/hooks';
-import { addProduct } from "./productsSlice";
+import { addProduct } from './productsSlice';
 import { sortProductsList } from './productsSlice';
 import { DropdownMenu } from '../../components/DropdownMenu';
 import { Modal } from '../../components/Modal';
@@ -67,6 +67,7 @@ export function ControlPanel() {
     dispatch(addProduct(newItem));
     dispatch(sortProductsList('alphabetically'))
     setShowModal(false);
+    setFieldError(false);
     setProductParams(initialParams);
   }
 
@@ -83,7 +84,7 @@ export function ControlPanel() {
         modes={['alphabetically', 'by quantity']}
         onMenuOption={(mode) => dispatch(sortProductsList(mode))}
       />
-      <button className='controlPanel-addBtn' onClick={() => setShowModal(true)}>
+      <button className='controlPanel__addButton' onClick={() => setShowModal(true)}>
         add product
       </button>
       <Modal

@@ -1,13 +1,13 @@
 .modal {
+  background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   opacity: 0;
   transition: all 0.3s ease-in-out;
   pointer-events: none;
@@ -21,7 +21,7 @@
     opacity: 0;
   }
 
-  .modal-content {
+  &__content {
     text-align: center;
     width: 500px;
     padding: 5px;
@@ -30,26 +30,38 @@
     transition: all 0.3s ease-in-out;
     transform: translateY(-200px);
 
-    .modal-header,
-    .modal-footer {
-      padding: 10px;
+    &__header {
+      padding: 0.6rem;
+
+      &__title {
+        margin: 0;
+      }
     }
 
-    .modal-title {
-      margin: 0;
+    &__body {
+      padding: 0.6rem;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+
+      &__error {
+        color: red;
+        font-size: 1.1rem;
+        margin: 1rem;
+      }
     }
 
-    .modal-footer {
+    &__footer {
       text-align: right;
+      padding: 0.6rem;
 
       button {
+        color: #333;
+        font-size: 1rem;
         padding: 0.5rem;
         border: none;
-        border-radius: 4px;
+        border-radius: 5px;
         background-color: #f5f5f5;
         box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-        font-size: 1rem;
-        color: #333;
         transition: box-shadow 0.2s ease-in-out;
 
         &:hover {
@@ -61,30 +73,18 @@
         }
       }
 
-      .modal-footer-cancel {
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-    }
-
-    .modal-body {
-      padding: 10px;
-      border-top: 1px solid #eee;
-      border-bottom: 1px solid #eee;
-
-      .modal-body-error {
-        color: red;
-        font-size: 1.1rem;
-        margin: 1rem;
+      &__cancel {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
       }
     }
   }
 
-  &.enter-done .modal-content {
+  &.enter-done .modal__content {
     transform: translateY(0);
   }
 
-  &.exit .modal-content {
+  &.exit .modal__content {
     transform: translateY(-200px);
   }
 }

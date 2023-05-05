@@ -23,7 +23,6 @@ export function ProductForm({
   },
   handler
 }: FormProps) {
-
   return (
     <form>
       <label>

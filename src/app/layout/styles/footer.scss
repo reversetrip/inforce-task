@@ -1,28 +1,26 @@
 footer {
   height: 130px;
   border: 1px solid rgba($color: #69706d, $alpha: 0.1);
+  background-color: rgba($color: #828f89, $alpha: 0.1);
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: rgba($color: #828f89, $alpha: 0.2);
 
   ul {
-    margin-left: 15%;
+    margin-left: 10%;
     margin-right: 5rem;
 
     li {
-      font-size: 1.2rem;
-      margin-left: 1rem;
+      margin: 0.5rem;
 
       &:hover {
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 1px 1px 1px rgba($color: #000, $alpha: 0.3);
       }
     }
   }
 
   p {
-    margin-left: 5rem;
-    margin-right: 40%;
+    font-weight: 500;
+    margin-left: 15%;
     align-self: flex-end;
   }
 }

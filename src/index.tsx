@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 import { getCommentsList } from './features/comments/commentsSlice';
-import App from './App';
+import { App } from './App';
 import './index.scss';
 
 store.dispatch(getCommentsList());
